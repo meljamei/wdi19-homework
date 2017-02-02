@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <h1>Image search</h1>
+      <br>
+      <br>
+      <%= form_tag '#', :id =>'search' do %>
+        <%= search_field_tag :query, nil, :placeholder => 'butterfly', :autofocus => true %>
+        <%= button_tag 'Search'%>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div id="images"></div>
+  </div>
+</div>
